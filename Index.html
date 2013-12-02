@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+ 
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  <link rel="stylesheet" href="themes/Silverblue2.css" />
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+   <!--Cristal-->
+   <style type="text/css">
+
+.gage{
+    background: url('img/background.jpg') no-repeat center center fixed; 
+background-size: cover;}
+
+.crystalList{
+    background: rgba(255,255,255,0.5);
+}
+   </style>
+</head>
+<body>   
+
+<!--=========-->
+<!--= VIEWS =-->
+<!--=========-->
+
+<!-- Home Oferta-->
+<div data-role="page" id="Ofertas" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+
+        <a id="CategoryMenu" data-role="button"  data-transition="slide"
+        href="#Categorias" data-icon="bars" class="ui-btn-left">
+            TiendaNea 
+        </a>
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#Ofertas" data-transition="slide" data-theme="" data-icon="info" class="ui-btn-active ui-state-persist">
+                        Ofertas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas" data-transition="slide" data-icon="home">
+                        Tiendas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas_Fav" data-transition="slide" data-theme="" data-icon="star">
+                        Favoritos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+
+        <!--===================================-->
+        <!--= Aca tengo que meter un deckgrid =-->
+        <!--===================================-->
+
+        <a href="#DetalleOferta"><div style="width: 100%; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+            <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div></a>
+    </div>
+</div>
+
+<!--Detalles de Ofertas-->
+<div data-role="page" id="DetalleOferta" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+        <a data-role="button" href="#ListaTiendas" data-icon="back" data-iconpos="left" data-transition="slide" data-rel="back"
+        class="ui-btn-left">
+            Volver
+        </a>
+
+    </div>
+    <div data-role="content">
+
+        <!--=======================================-->
+        <!--Esto es un slider para ver las imagenes-->
+        <!--=======================================-->
+
+         <div style="width: 100%; height: 200px; position: relative; background-color:#fbfbfb; ">
+            <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div>
+        
+        <div class="crystalList" style="padding:5px; border: solid #fff 1px;">
+            <h2>
+                <a href="#DetalleTienda">ShopName</a>
+            </h2>
+            <h4>
+                ShopAdress
+            </h4>
+            <h4>
+                Desde - Hasta - 
+            </h4>
+            <p>
+                OfertDetail OfertDetail OfertDetail OfertDetail OfertDetail OfertDetail OfertDetail OfertDetail OfertDetail 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Manu Categorias -->
+<div data-role="page" id="Categorias" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+        <a id="CategoryMenu" data-role="button" data-rel="back" data-transition="slide"
+        href="#Categorias" data-icon="bars" data-iconpos="left" class="ui-btn-left">
+            TiendaNea
+        </a>
+       
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="c" data-inset="true">
+            <li data-theme="c" class="crystalList">
+                <a href="#Ofertas_cat" data-transition="slide">
+                    OfertasCategoryName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#Ofertas_cat" data-transition="slide">
+                    OfertasCategoryName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#Ofertas_cat" data-transition="slide">
+                    OfertasCategoryName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#Ofertas_cat" data-transition="slide">
+                    OfertasCategoryName
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+
+<!-- Lista de tiendas -->
+<div data-role="page" id="ListaTiendas" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+        <a id="CategoryMenu" data-role="button" data-transition="slide"
+        href="#Categorias" data-icon="bars" data-iconpos="left" class="ui-btn-left">
+            TiendaNea
+        </a>
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#Ofertas" data-transition="slide" data-theme="" data-icon="info">
+                        Ofertas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas" data-transition="slide" data-theme="" data-icon="home" class="ui-btn-active ui-state-persist">
+                        Tiendas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas_Fav" data-transition="slide" data-theme="" data-icon="star">
+                        Favoritos
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>        
+    <div data-role="fieldcontain"  >
+        <input name="" id="searchinput3" placeholder="Buscar tienda" value=""
+        type="search">
+    </div>
+    <div data-role="content" >
+        <ul data-role="listview" data-divider-theme="b" data-inset="true"> <!--Inset = true-->
+            <li data-theme="c" class="crystalList">   <!--style="background: rgba(255,255,255,0.5);"--> 
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+                        <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+            <li data-theme="c" class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Detalle de tiendas --> 
+<!--Si esta en favoritos el boton favorito deberia aparecer en azul (class="ui-btn-active ui-state-persist")-->
+<div data-role="page" id="DetalleTienda" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+        <a data-role="button" href="#ListaTiendas" data-icon="back" data-iconpos="left" data-transition="slide" class="ui-btn-left">
+            Volver
+        </a>
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <!--Trae todas las ofertas de esa tienda-->
+                    <a href="#Ofertas_tienda" data-transition="slide" data-theme="" data-icon="info">
+                        Ofertas
+                    </a>
+                </li>
+                <li>
+                    <!--Añade a favoritos-->
+                    <a href="" data-theme="" data-icon="star">
+                       Favorito 
+                    </a>
+                </li>
+                <li>
+                    <a href="#share" data-transition="pop" data-theme="" data-icon="forward">
+                        Compartir
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Madison, WI&amp;zoom=14&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
+        width="100%" height="200">
+        <div class="crystalList" style="padding:5px; border: solid #fff 1px; margin-top:-5px;">
+            <h2>
+                ShopName
+            </h2>
+            <h4>
+                ShopAdress
+            </h4>
+            <p>
+                ShopDetail ShopDetail ShopDetail ShopDetail ShopDetail ShopDetail ShopDetail ShopDetail 
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Lista de Favoritos -->
+<div data-role="page" id="ListaTiendas_Fav" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+        <a id="CategoryMenu" data-role="button" data-transition="slide"
+        href="#Categorias" data-icon="bars" data-iconpos="left" class="ui-btn-left">
+            TiendaNea
+        </a>
+        <div data-role="navbar" data-iconpos="left">
+            <ul>
+                <li>
+                    <a href="#Ofertas" data-transition="slide" data-theme="" data-icon="info">
+                        Ofertas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas" data-transition="slide" data-theme="" data-icon="home" >
+                        Tiendas
+                    </a>
+                </li>
+                <li>
+                    <a href="#ListaTiendas_Fav" data-transition="slide" data-theme="" data-icon="star" class="ui-btn-active ui-state-persist">
+                        Favoritos
+                    </a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    <div data-role="fieldcontain">
+        <input name="" id="searchinput3" placeholder="Buscar tienda" value=""
+            type="search">
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="c"  class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName_Fav
+                </a>
+            </li>
+            <li data-theme="c"  class="crystalList">
+                <a href="#DetalleTienda">
+                    TiendaName_Fav
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Ofertas de una tienda -->
+<div data-role="page" id="Ofertas_tienda" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+
+        <a id="CategoryMenu" data-role="button"  data-transition="slide"
+        href="#DetalleTienda" data-icon="back" class="ui-btn-left">
+            volver
+        </a>
+
+    </div>
+    <div data-role="content">
+
+        <!--===============================-->
+        <!--Aca tengo que meter un deckgrid-->
+        <!--===============================-->
+
+        <div style="width: 100%; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+            <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div>
+    </div>
+</div>
+
+<!-- Ofertas por categoria -->
+<div data-role="page" id="Ofertas_cat" class="gage">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <span class="ui-title">
+        </span>
+
+        <a id="CategoryMenu" data-role="button"  data-transition="slide"
+        href="#DetalleTienda" data-icon="back" class="ui-btn-left">
+            Volver 
+        </a>
+    </div>
+    <div data-role="content">
+        <!--===============================-->
+        <!--Aca tengo que meter un deckgrid-->
+        <!--===============================-->
+
+        <div style="width: 100%; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+            <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div>
+    </div>
+</div>
+
+<!-- Compartir -->
+<div data-role="dialog" id="share">
+    <div data-theme="a" data-role="header">
+        <span class="ui-title">
+        </span>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="false">
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Facebook
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Twitter
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
